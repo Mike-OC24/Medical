@@ -1,0 +1,11 @@
+.footer {
+   background-color: $footer-color;
+   &__copyright {
+      min-height: 108px;
+      display: flex;
+      align-items: center;
+   }
+   &__copyright-text {
+      color: $white;
+   }
+}
