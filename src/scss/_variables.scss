@@ -15,6 +15,17 @@ $btn: #B4141B;
    text-transform: uppercase;
 }
 
+%btn {
+   display: inline-block;
+   padding: 6px 18px;
+   background-color: $btn;
+   color: $white;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 23px;
+   text-transform: uppercase;
+}
+
 %title {
    font-weight: 700;
    font-size: 32px;
