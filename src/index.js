@@ -16,3 +16,21 @@ new Swiper('.swiper', {
       prevEl: '.swiper-button-right',
    },
 });
+
+
+let dropdownButton = document.querySelectorAll('.dropdown__button');
+let dropdownContent = document.querySelectorAll('.dropdown__content');
+
+
+
+for (let i = 0; i <= dropdownButton.length; i++) {
+   dropdownButton[i].addEventListener('click',function() {
+      this.classList.toggle('button-active');
+
+         if ([i]) {
+            dropdownContent.classList.toggle('shown');
+         };
+         
+      });
+   };
+

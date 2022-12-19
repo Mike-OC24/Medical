@@ -26,8 +26,28 @@ $btn: #B4141B;
    text-transform: uppercase;
 }
 
-%title {
+%link {
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 29px;
+   color: #7D7D7D;
+}
+
+%main-title {
    font-weight: 700;
    font-size: 32px;
    line-height: 37px;
+}
+
+%title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 28px;
+   color: $general-color;
+}
+
+%subtitle {
+   font-size: 24px;
+   line-height: 28px;
+   color: #9B9B9B;
 }
