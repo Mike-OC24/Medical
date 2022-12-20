@@ -1,0 +1,100 @@
+.hero--size {
+   height: 647px;
+   margin-bottom: 85px;
+}
+
+.swiper-container {
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+
+/*style="background-image: url('img/slide1.jpg');" - не сработало*/
+.image-slide1 {
+   background-image: url('../img/slide1.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* надо убрать!*/
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+   padding-right: 20%;
+}
+
+.image-slide2 {
+   background-image: url('../img/slide2.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* надо убрать!*/
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+   padding-right: 20%;
+}
+
+.hero-slide__content {
+   max-width: 584px;
+}
+
+.hero-slide__content-title {
+   font-size: 28px;
+   line-height: 32px;
+}
+
+.hero-slide__content-subtitle {
+   font-weight: 700;
+   font-size: 84px;
+   line-height: 96px;
+}
+
+.hero-slide__content-text {
+   font-size: 32px;
+   line-height: 42px;
+   margin-bottom: 70px;
+}
+
+.hero-slide__content-button {
+   @extend %button;
+   position: relative;
+
+   &::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 100%;
+      background-color: $general-color;
+      top: 0;
+      left: 0;
+      transition: width .3s ease-out;
+   }
+
+   &:hover {
+      &::before {
+         width: 100%;
+      }
+   }
+
+   span {
+      position: relative;
+      z-index: 1;
+   }
+}
+
+.hero-swiper-btn {
+   position: absolute;
+   cursor: pointer;
+   z-index: 1;
+   top: 50%;
+}
+
+.swiper-button-left {
+   left: 5%;
+}
+
+.swiper-button-right {
+   right: 10%;
+}

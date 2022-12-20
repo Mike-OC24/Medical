@@ -1,0 +1,49 @@
+.about__content {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 135px;
+}
+
+.content__title {
+   @extend %main-title ;
+   margin-bottom: 57px;
+}
+
+.content__image {
+   margin-bottom: 38px;
+}
+
+.content__text {
+   max-width: 772px;
+}
+
+.content__box {
+   position: relative;
+   padding: 45px 29px 32px 37px;
+   background: linear-gradient(180deg, #F8F8F8 0%, #F7F7F7 100%);
+}
+
+.content__box--bgc {
+   background: linear-gradient(180deg, #F3F3F3 2.58%, #F3F3F3 100%);
+}
+
+.content__box-title {
+   @extend %title;
+   margin-bottom: 17px;
+}
+
+.content__box-icon {
+   position: absolute;
+   right: 6%;
+   top: 18%;
+}
+
+.content__box-text {
+   max-width: 284px;
+   line-height: 25px;
+   margin-bottom: 10px;
+}
+
+.content__box-link {
+   @extend %link; 
+}
