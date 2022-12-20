@@ -1,13 +1,14 @@
 .modules__content {
    display: flex;
    justify-content: space-between;
+   margin-bottom: 161px;
 }
 
 .services__content {
    width: 593px;  
 }
 
-.services__title {
+.services__title, .security__title {
    @extend %main-title ;
    margin-bottom: 9px;
 }
@@ -17,7 +18,7 @@
    margin-bottom: 67px;
 }
 
-.services__dropdown {
+.services__dropdown:not(:last-child) {
    margin-bottom: 42px;
 }
 
@@ -98,8 +99,23 @@
 }
 
 
+.security__subtitle {
+   @extend %subtitle;
+   margin-bottom: 47px;
+}
 
+.security__content {
+   width: 474px;
+}
+
+.security__image {
+   margin-bottom: 58px;
+}
 
 .security__desc {
-   width: 470px;
+   margin-bottom: 54px;
+}
+
+.security__button {
+   @extend %btn;
 }
