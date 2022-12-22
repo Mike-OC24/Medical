@@ -1,7 +1,9 @@
 $general-color: #0E77AF;
+$link: #0c9ae6;
 $text-color: #000000;
 $white: #FFFFFF;
 $footer-color: #363636;
+$footer-content: #4A4A4A;
 $btn: #B4141B;
 
 %button {
@@ -13,6 +15,29 @@ $btn: #B4141B;
    font-size: 24px;
    line-height: 23px;
    text-transform: uppercase;
+   position: relative;
+   &::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 100%;
+      background-color: $general-color;
+      top: 0;
+      left: 0;
+      transition: width .3s ease-out;
+   }
+   &:active {
+      text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(255, 255, 255);
+   }
+   &:hover {
+      &::before {
+         width: 100%;
+      }
+   }
+   span {
+      position: relative;
+      z-index: 1;
+   }
 }
 
 %btn {
@@ -24,6 +49,12 @@ $btn: #B4141B;
    font-size: 12px;
    line-height: 23px;
    text-transform: uppercase;
+   &:hover {
+      background-color: $general-color;
+   }
+   &:active {
+      text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(255, 255, 255);
+   }
 }
 
 %link {
@@ -47,8 +78,31 @@ $btn: #B4141B;
    color: $general-color;
 }
 
+%f-title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 28px;
+   margin-bottom: 45px;
+}
+
 %subtitle {
    font-size: 24px;
    line-height: 28px;
    color: #9B9B9B;
+}
+
+%f-heading {
+   padding-top: 40px;
+   padding-left: 72px;
+   .title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 11px;
+   }
+   .icon {
+      position: absolute;
+      top: 43%;
+      left: 5%;
+   }
 }

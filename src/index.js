@@ -34,3 +34,13 @@ for (let i = 0; i <= dropdownButton.length; i++) {
       });
    };
 
+
+
+let row = document.querySelectorAll('.row');
+let visibleInfo = document.querySelectorAll('.info');
+
+for (let i = 0; i <= row.length; i++) {
+   row[i].addEventListener('click',function() {
+      this.classList.toggle('row--one');
+   });
+};
