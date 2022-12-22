@@ -1,29 +1,48 @@
 *,
 *::before,
-*::after{
+*::after {
    margin: 0;
    padding: 0;
    border: 0;
    box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
    font-weight: inherit;
    font-size: inherit;
 }
-a{
+
+a {
    text-decoration: none;
    color: inherit;
 }
-ul,li{
+
+ul,
+li {
    list-style: none;
 }
-img,svg{
+
+img,
+svg {
    vertical-align: top;
 }
-button{
+
+svg {
+   width: 100%;
+   height: 100%;
+}
+
+button {
    font-size: inherit;
    font-family: inherit;
 }
-button,a {
+
+button,
+a {
    cursor: pointer;
 }

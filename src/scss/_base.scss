@@ -34,9 +34,8 @@ body{
    margin: 0px auto;
    padding: 0px 15px;
 }
-a:active,a:hover{
-/*   color: $general-color;*/
- /*  text-decoration: underline;  */
-}
 
-
+a:active,a:hover {
+   color: $link;
+   text-decoration: underline; 
+ }

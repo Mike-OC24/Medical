@@ -17,14 +17,11 @@
    &__block-mail {
       color: $white;
       font-size: 12px;
-      &:active,:hover{
+      &:active,:hover {
          color: $white;
-         text-decoration: underline;  
-      }
+      } 
    }
 }
-
-
 
 .socials__item:not(:last-child) {
    margin-right: 21px;
