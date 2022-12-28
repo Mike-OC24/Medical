@@ -1,5 +1,5 @@
 .benefits__content {
-   background-color: linear-gradient(180deg, #FCFCFC 0%, #F8F8F8 100%);
+   background: linear-gradient(180deg, #FCFCFC 0%, #F8F8F8 100%);
    min-height: 504px;
    margin-bottom: 130px;
 }
@@ -32,6 +32,7 @@
    color: #FFFFFF;
    padding-top: 35px;
    padding-left: 34px;
+   cursor: pointer;
 /* padding: 35px 40px 36px 34px;*/
    &:not(:last-child) {
       margin-bottom: 21px;
@@ -40,7 +41,6 @@
 
 .benefits__info {
    padding-left: 65px;
-  /* background-color: rgb(212, 170, 170);*/
 }
 
 .info {
@@ -68,14 +68,13 @@
    }
 }
 
-.row--one {
-   
+.row-click {
    background-color: rgba(255, 255, 255, 0.9);
    color: black;
 }
 
 .info--one {
-   display: none;
+   display: block;
 }
 
 .info--two {
@@ -83,7 +82,7 @@
 }
 
 .info--three {
-   display: block;
+   display: none;
 }
 
 .info-visible {
