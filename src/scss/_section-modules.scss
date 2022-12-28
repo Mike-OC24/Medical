@@ -76,6 +76,7 @@
 }*/
 
 .dropdown__content {
+   display: flex;
 /* display: none;
    max-height: 0;
    overflow: hidden;
@@ -85,7 +86,7 @@
 }
 
 .dropdown__content-shown {
-  
+  display: flex;
 }
 
 .dropdown__content-image {
