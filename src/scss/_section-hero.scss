@@ -11,7 +11,7 @@
 
 /*style="background-image: url('img/slide1.jpg');" - не сработало*/
 .image-slide1 {
-   background-image: url('../img/slide1.jpg');
+/*   background-image: url('../img/slide1.jpg');*/
    background-repeat: no-repeat;
    background-size: cover;
    /* надо убрать!*/
@@ -24,7 +24,7 @@
 }
 
 .image-slide2 {
-   background-image: url('../img/slide2.jpg');
+/*   background-image: url('../img/slide2.jpg');*/
    background-repeat: no-repeat;
    background-size: cover;
    /* надо убрать!*/

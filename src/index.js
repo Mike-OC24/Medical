@@ -20,81 +20,27 @@ new Swiper('.swiper', {
 /*---вариант 1------*/
 
 let servicesDropdown = document.querySelectorAll('.services__dropdown');
-
 servicesDropdown.forEach((item) => {
 
-
    let itemDropdownContent = item.querySelector('.dropdown__content')
-
    let itemHeight = itemDropdownContent.clientHeight;
-
    itemDropdownContent.style.height = '0px';
 
-
-   item.querySelector('.dropdown__button').onclick = function() {
-
+   item.querySelector('.dropdown__headline').onclick = function () {
+      /*   this.classList.toggle('button-active');*/
+      /*   let dropdownButton = document.querySelector('.dropdown__button');*/
       this.classList.toggle('button-active');
-
-      let dropdownContent =  this.closest('.services__dropdown').querySelector('.dropdown__content')
-
+      let dropdownContent = this.closest('.services__dropdown').querySelector('.dropdown__content')
       dropdownContent.classList.toggle('dropdown__content-shown')
 
-      if(dropdownContent.classList.contains('dropdown__content-shown')) {
+      if (dropdownContent.classList.contains('dropdown__content-shown')) {
          itemDropdownContent.style.height = itemHeight + 'px';
-      } else 
-      {
+      } else {
          itemDropdownContent.style.height = '0px';
       }
-      
    }
+
 });
-
-
-
-/*---Вариант 2---*/
-
-/*let dropdownHeadline = Array.from(document.querySelectorAll('.dropdown__headline'));
-
-for (let headline of dropdownHeadline) {
-   headline.addEventListener('click', () => {
-      headline.nextElementSibling.classList.toggle('hidden')
-   })
-}*/
-
-
-
-/*---Вариант 3-- РАБОТАЕТ*/ 
-
-/*let dropdownHeadline = document.querySelectorAll('.dropdown__headline');
-
-for (let i = 0; i < dropdownHeadline.length; i++) {
-   dropdownHeadline[i].addEventListener('click',function() {
-      
-      let dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "flex") {
-         dropdownContent.style.display = "none";
-      } else {
-         dropdownContent.style.display = "flex";
-      }
-
-      if (dropdownContent.style.maxHeight) {
-         dropdownContent.style.maxHeight = null;
-      } else {
-         dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px';
-      }
-
-   });
-};
-*/
-
-
-
-
-
-
-
-
-
 
 
 
@@ -115,10 +61,10 @@ benefitsContentInner.forEach((item) => {
 
 
 
-     
-   /*   if ( dropdownButton === 'button-active') {
-         dropdownContent.classList.toggle('shown');
-      };*/
+
+/*   if ( dropdownButton === 'button-active') {
+      dropdownContent.classList.toggle('shown');
+   };*/
 
 
 /*let row = document.querySelectorAll('.row');

@@ -10,8 +10,6 @@
 
    &__socials {
       display: flex;
-      margin-top: auto;
-      /*не сработал align-items:center*/
    }
 
    &__block-mail {
@@ -36,6 +34,7 @@
 .header__nav {
    margin: 0px 58px 0px 191px;
 }
+
 .nav__list {
    display: flex;
 

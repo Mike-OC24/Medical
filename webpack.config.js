@@ -9,6 +9,7 @@ module.exports = {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
       clean: true,
+   /*   assetModuleFilename: 'img/[name][ext]',*/
    },
    plugins: [
       new HtmlWebpackPlugin({
@@ -33,14 +34,14 @@ module.exports = {
             test: /\.(png|jpg|jpeg|svg|gif)$/i,
             type: 'asset/resource',
             generator: {
-               filename: 'img/[name][ext]'
+               filename: 'img/[name][ext]',
             }
          },
          {
             test: /\.(woff|woff2)$/i,
             type: 'asset/resource',
             generator: {
-               filename: 'fonts/[name][ext]'
+               filename: 'fonts/[name][ext]',
             }
          },
       ],

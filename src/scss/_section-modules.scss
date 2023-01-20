@@ -25,6 +25,7 @@
 .dropdown__headline {
    position: relative;
    margin-bottom: 32px;
+   cursor: pointer;
    .dropdown__headline-title {
       @extend %title;
       &::after {
@@ -47,7 +48,6 @@
    position: relative;
    width: 18px;
    height: 18px;
-   cursor: pointer;
 }
 
 .line {
@@ -71,16 +71,8 @@
    transform: rotate(-180deg);
 }
 
-/*.hidden {
-   display: flex;
-}*/
-
 .dropdown__content {
    display: flex;
-/* display: none;
-   max-height: 0;
-   overflow: hidden;
-   transition: max-height 0.2s ease-out;*/
    transition: all .3s ease;
    overflow: hidden;
 }
