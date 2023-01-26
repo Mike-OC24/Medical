@@ -9,12 +9,10 @@
    width: 100%;
 }
 
-/*style="background-image: url('img/slide1.jpg');" - не сработало*/
 .image-slide1 {
-/*   background-image: url('../img/slide1.jpg');*/
+   background-image: url('../img/slide1.jpg');
    background-repeat: no-repeat;
    background-size: cover;
-   /* надо убрать!*/
    background-position: center;
    display: flex;
    flex-direction: column;
@@ -24,10 +22,9 @@
 }
 
 .image-slide2 {
-/*   background-image: url('../img/slide2.jpg');*/
+   background-image: url('../img/slide2.jpg');
    background-repeat: no-repeat;
    background-size: cover;
-   /* надо убрать!*/
    background-position: center;
    display: flex;
    flex-direction: column;

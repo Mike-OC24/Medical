@@ -3,23 +3,24 @@
    justify-content: center;
    min-height: 504px;
    margin-bottom: 130px;
-   
+
 }
 
 .benefits__image {
    background-image: url(../img/benefits-img.jpg);
    background-repeat: no-repeat;
    background-position: right;
-/*   background-size: cover;*/
+   /*   background-size: cover;*/
    width: 100%;
 }
 
-.benefits__content {
+.benefits__tabs {
    display: flex;
    justify-content: flex-end;
    padding-top: 87px;
 }
-.row {
+
+.tab {
    background-color: $general-color;
    width: 474px;
    height: 96px;
@@ -30,60 +31,56 @@
    padding-top: 35px;
    padding-left: 34px;
    cursor: pointer;
+
    &:not(:last-child) {
       margin-bottom: 21px;
    }
 }
 
-.benefits__info {
+.tab:hover {
+   background: rgba(255, 255, 255, 0.9);
+   color: black;
+}
+
+.benefits__tabs-info {
    background: linear-gradient(180deg, #FCFCFC 0%, #F8F8F8 100%);
    padding-left: 65px;
    padding-top: 87px;
    width: 100%;
 }
 
-.info {
-   &__title {
-      @extend %main-title ;
-      margin-bottom: 10px;
-   }
-
-   &__subtitle {
-      @extend %subtitle;
-      margin-bottom: 38px;
-   }
-
-   &__list {
-      width: 474px;
-      margin-bottom: 26px;
-   }
-
-   &__list-item {
-      list-style: disc;
-   }
-
-   &__button {
-      @extend %btn;
-   }
+.tabs__info-title {
+   @extend %main-title;
+   margin-bottom: 10px;
 }
 
-.row-click {
-   background-color: rgba(255, 255, 255, 0.9);
+.tabs__info-subtitle {
+   @extend %subtitle;
+   margin-bottom: 38px;
+}
+
+.tabs__info-list {
+   width: 474px;
+   margin-bottom: 26px;
+}
+
+.list-item {
+   list-style: disc;
+}
+
+.tabs__info-button {
+   @extend %btn;
+}
+
+.tabs__info {
+   display: none;
+}
+
+.tabs__info-active {
+   display: block;
+}
+
+.active {
+   background: rgba(255, 255, 255, 0.9);
    color: black;
-}
-
-.info--one {
-   display: block;
-}
-
-.info--two {
-   display: none;
-}
-
-.info--three {
-   display: none;
-}
-
-.info-visible {
-   display: block;
 }

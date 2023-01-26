@@ -17,7 +17,7 @@ new Swiper('.swiper', {
    },
 });
 
-/*---вариант 1------*/
+/*---section__modules---*/
 
 let servicesDropdown = document.querySelectorAll('.services__dropdown');
 servicesDropdown.forEach((item) => {
@@ -27,8 +27,7 @@ servicesDropdown.forEach((item) => {
    itemDropdownContent.style.height = '0px';
 
    item.querySelector('.dropdown__headline').onclick = function () {
-      /*   this.classList.toggle('button-active');*/
-      /*   let dropdownButton = document.querySelector('.dropdown__button');*/
+
       this.classList.toggle('button-active');
       let dropdownContent = this.closest('.services__dropdown').querySelector('.dropdown__content')
       dropdownContent.classList.toggle('dropdown__content-shown')
@@ -42,36 +41,56 @@ servicesDropdown.forEach((item) => {
 
 });
 
+/*-----Tabs-----*/
 
+let tabs = document.querySelectorAll('.tab');
+let tabsInfo = document.querySelectorAll('.tabs__info');
 
-/*let benefitsContentInner = document.querySelector('.benefits__content-inner');
+for (let elem of tabs) {
+   elem.addEventListener('mouseover', function () {
+      let tabId = elem.getAttribute('data-tab');
+      let currentTab = document.querySelector(tabId);
 
-benefitsContentInner.forEach((item) => {
+      for (let elem of tabs) {
+         elem.classList.remove('active');
+      }
+      for (let elem of tabsInfo) {
+         elem.classList.remove('tabs__info-active');
+      }
 
-   item.querySelector('.row--two').onclick = function() {
+      elem.classList.add('active');
+      currentTab.classList.add('tabs__info-active');
 
-      this.classList.add('row-click');
+   })
 
-      let info = this.closest('.benefits__content-inner').querySelector('.info--two')
+   /*   elem.addEventListener('mouseout', function() {
+         elem.classList.add('active');
+         currentTab.classList.add('tabs__info-active');
+      })*/
+}
 
-      info.classList.add('info-visible')
-   }
-})*/
+/*---по клику---*/
 
+// let tabs = document.querySelectorAll('.tab');
+// let tabsInfo = document.querySelectorAll('.tabs__info');
 
+// for (let elem of tabs) {
+//    elem.addEventListener('click', function () {
+//       let tabId = elem.getAttribute("data-tab");
+//       let currentTab = document.querySelector(tabId);
 
+//       if (!elem.classList.contains('active')) {
 
+//          for (let elem of tabs) {
+//             elem.classList.remove('active');
+//          }
+//          for (let elem of tabsInfo) {
+//             elem.classList.remove('tabs__info-active');
+//          }
 
-/*   if ( dropdownButton === 'button-active') {
-      dropdownContent.classList.toggle('shown');
-   };*/
+//          elem.classList.add('active');
+//          currentTab.classList.add('tabs__info-active');
+//       }
 
-
-/*let row = document.querySelectorAll('.row');
-let visibleInfo = document.querySelectorAll('.info');
-
-for (let i = 0; i <= row.length; i++) {
-   row[i].addEventListener('click',function() {
-      this.classList.toggle('row-click');
-   });
-};*/
+//    })
+// }

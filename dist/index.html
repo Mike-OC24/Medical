@@ -77,7 +77,7 @@
 
                <div class="swiper-wrapper">
 
-                  <div class="swiper-slide image-slide1" style="background-image: url(./img/slide1.jpg)">
+                  <div class="swiper-slide image-slide1">
                      <div class="hero-slide__content">
                         <h1 class="hero-slide__content-title">For Physicians</h1>
                         <p class="hero-slide__content-subtitle">Our Promise</p>
@@ -87,7 +87,7 @@
                      </div>
 
                   </div>
-                  <div class="swiper-slide image-slide2" style="background-image: url(img/slide2.jpg);">
+                  <div class="swiper-slide image-slide2">
                      <div class="hero-slide__content">
                         <h1 class="hero-slide__content-title">For Hospitals/Medical Billing Companies</h1>
                         <p class="hero-slide__content-subtitle">Our Promise</p>
@@ -181,60 +181,57 @@
             </div>
          </section>
 
-         <section class="benefits">
-            <div class="benefits__content">
-               <div class="benefits__image">
-                  <div class="benefits__content-inner container">
-                     <div class="benefits__items">
-                        <div class="benefits__items-row">
-                           <div class="row row--one">For Physicians and Group Practice:</div>
-                           <div class="row row--two">For Medical Billing Companies/Hospitals:</div>
-                           <div class="row row--three">You Stay in Control:</div>
-                        </div>
-                     </div>
-                     <div class="benefits__info">
-                        <div class="info info--one">
-                           <h1 class="info__title">Benefits</h1>
-                           <h2 class="info__subtitle">For Physicians and Group Practice</h2>
-                           <ul class="info__list">
-                              <li class="info__list-item">90% first pass payment within 30 days, at 3% Billing charges.
-                              </li>
-                              <li class="info__list-item">Increase of 15-20% in monthly collected revenue.</li>
-                              <li class="info__list-item">Expert teams with vast knowledge and experience who will
-                                 follow up every claim to zero balance.</li>
-                              <li class="info__list-item">Services spanning coding review, claims and payment
-                                 processing, as well as Insurance and patient follow up.</li>
-                           </ul>
-                           <button class="info__button">read more</button>
-                        </div>
-
-                        <div class="info info--two">
-                           <h1 class="info__title">Benefits</h1>
-                           <h2 class="info__subtitle">For Medical Billing Companies/Hospitals</h2>
-                           <ul class="info__list">
-                              <li class="info__list-item">90% First Pass payment within 30 days</li>
-                              <li class="info__list-item">@up to 3% of collected revenue.</li>
-                              <li class="info__list-item">Free Credentialing and Re-credentialing</li>
-                           </ul>
-                           <button class="info__button">read more</button>
-                        </div>
-
-                        <div class="info info--three">
-                           <h1 class="info__title">Benefits</h1>
-                           <h2 class="info__subtitle">You Stay in Control</h2>
-                           <ul class="info__list">
-                              <li class="info__list-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
-                                 delectus commodi ex reiciendis corporis nostrum sapiente, quasi dolore, ut neque
-                                 assumenda ducimus provident nisi totam aliquam quis officia? Esse, culpa.
-                              <li>
-                              <li class="info__list-item">Dolorem porro tempore quasi vero quaerat suscipit placeat
-                                 fugit, repellendus nostrum eius, excepturi neque delectus, dolores sit corporis! Dicta
-                                 doloribus quae tempore?</li>
-                           </ul>
-                           <button class="info__button">read more</button>
-                        </div>
-                     </div>
+         <section class="benefits benefits--flex">
+            <div class="benefits__image">
+               <div class="benefits__tabs">
+                  <div class="tabs">
+                     <div class="tab active" data-tab="#tab-one">For Physicians and Group Practice:</div>
+                     <div class="tab" data-tab="#tab-two">For Medical Billing Companies/Hospitals:</div>
+                     <div class="tab" data-tab="#tab-three">You Stay in Control:</div>
                   </div>
+               </div>
+            </div>
+
+            <div class="benefits__tabs-info">
+               <div class="tabs__info tabs__info-active" id="tab-one">
+                  <h1 class="tabs__info-title">Benefits</h1>
+                  <h2 class="tabs__info-subtitle">For Physicians and Group Practice</h2>
+                  <ul class="tabs__info-list">
+                     <li class="list-item">90% first pass payment within 30 days, at 3% Billing charges.
+                     </li>
+                     <li class="list-item">Increase of 15-20% in monthly collected revenue.</li>
+                     <li class="list-item">Expert teams with vast knowledge and experience who will
+                        follow up every claim to zero balance.</li>
+                     <li class="list-item">Services spanning coding review, claims and payment
+                        processing, as well as Insurance and patient follow up.</li>
+                  </ul>
+                  <button class="tabs__info-button">read more</button>
+               </div>
+
+               <div class="tabs__info" id="tab-two">
+                  <h1 class="tabs__info-title">Benefits</h1>
+                  <h2 class="tabs__info-subtitle">For Medical Billing Companies/Hospitals</h2>
+                  <ul class="tabs__info-list">
+                     <li class="list-item">90% First Pass payment within 30 days</li>
+                     <li class="list-item">@up to 3% of collected revenue.</li>
+                     <li class="list-item">Free Credentialing and Re-credentialing</li>
+                  </ul>
+                  <button class="tabs__info-button">read more</button>
+               </div>
+
+               <div class="tabs__info" id="tab-three">
+                  <h1 class="tabs__info-title">Benefits</h1>
+                  <h2 class="tabs__info-subtitle">You Stay in Control</h2>
+                  <ul class="tabs__info-list">
+                     <li class="list-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                        delectus commodi ex reiciendis corporis nostrum sapiente, quasi dolore, ut neque
+                        assumenda ducimus provident nisi totam aliquam quis officia? Esse, culpa.
+                     <li>
+                     <li class="list-item">Dolorem porro tempore quasi vero quaerat suscipit placeat
+                        fugit, repellendus nostrum eius, excepturi neque delectus, dolores sit corporis! Dicta
+                        doloribus quae tempore?</li>
+                  </ul>
+                  <button class="tabs__info-button">read more</button>
                </div>
             </div>
          </section>

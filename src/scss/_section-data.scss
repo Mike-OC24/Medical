@@ -1,4 +1,4 @@
-.data__content  {
+.data__content {
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -9,22 +9,23 @@
    margin-bottom: 46px;
 }
 
-.module {
-   &__title {
-      @extend %main-title;
-      margin-bottom: 9px;
-   }
-   &__subtitle {
-      @extend %subtitle;
-      margin-bottom: 24px;
-   }
-   &__text {
-      color: #595959;
-      margin-bottom: 32px
-   }
-   &__link {
-      @extend %link;
-   }
+.module__title {
+   @extend %main-title;
+   margin-bottom: 9px;
+}
+
+.module__subtitle {
+   @extend %subtitle;
+   margin-bottom: 24px;
+}
+
+.module__text {
+   color: #595959;
+   margin-bottom: 32px
+}
+
+.module__link {
+   @extend %link;
 }
 
 .data__content-right {
@@ -68,6 +69,3 @@
       width: 104px;
    }
 }
-
-   
-
