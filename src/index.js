@@ -62,35 +62,4 @@ for (let elem of tabs) {
       currentTab.classList.add('tabs__info-active');
 
    })
-
-   /*   elem.addEventListener('mouseout', function() {
-         elem.classList.add('active');
-         currentTab.classList.add('tabs__info-active');
-      })*/
 }
-
-/*---по клику---*/
-
-// let tabs = document.querySelectorAll('.tab');
-// let tabsInfo = document.querySelectorAll('.tabs__info');
-
-// for (let elem of tabs) {
-//    elem.addEventListener('click', function () {
-//       let tabId = elem.getAttribute("data-tab");
-//       let currentTab = document.querySelector(tabId);
-
-//       if (!elem.classList.contains('active')) {
-
-//          for (let elem of tabs) {
-//             elem.classList.remove('active');
-//          }
-//          for (let elem of tabsInfo) {
-//             elem.classList.remove('tabs__info-active');
-//          }
-
-//          elem.classList.add('active');
-//          currentTab.classList.add('tabs__info-active');
-//       }
-
-//    })
-// }
